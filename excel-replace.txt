@@ -1,0 +1,6 @@
+'-- Replace All text
+'-- document
+With ActiveDocument.Content.Find
+    .Execute FindText:="", ReplaceWith:="", _
+       Forward:=False, Replace:=wdReplaceAll
+End With
