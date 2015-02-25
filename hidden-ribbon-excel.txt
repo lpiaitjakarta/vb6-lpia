@@ -6,7 +6,9 @@ Application.ExecuteExcel4Macro "Show.ToolBar(""Ribbon"", True)"
 '-- alternative toggle ribbon
 '------------------
 '-- toggle ribbon
+Application.CommandBars.ExecuteMso "MinimizeRibbon"
 CommandBars.ExecuteMso "MinimizeRibbon"
 
 '-- toggle ribbon
+Application.ActiveWindow.ToggleRibbon
 ActiveWindow.ToggleRibbon
